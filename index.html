@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MoneyMaker.com</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="css/style.css" rel="stylesheet">
+    <script defer src="js/script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="container">
+    <form class="form">
+        <fieldset class="form__fieldset">
+            <legend class="form__legend">Currency calculator</legend>
+            <label class="form__labelText">
+                <span class=>I have</span>
+                <input class="amount" name="form" type="number" min="1" step="any" placeholder="1" required>
+            </label>
+            <label class="form__labelText">
+                <select class="currencyIn" name="form__currencyIn" type="select" required>
+                    <option value="PLN" selected>PLN</option>
+                    <option value="EUR">EUR</option>
+                    <option value="USD">USD</option>
+                </select>
+            </label>
+            <label class="form__labelExchange">
+                <p>Exchange to
+                    <select class="currencyOut" name="form__currencyOut" type="select" required>
+                        <option value="PLN">PLN</option>
+                        <option value="EUR" selected>EUR</option>
+                        <option value="USD">USD</option>
+                    </select>
+                </p>
+            </label>
+        </fieldset>
+    </form>
+
+    <div class="recieve">
+        <p>Exchange value: <strong class="result">0.21 EUR</strong></p>
+    </div>
+
+    <footer class="footer">
+        Copyright 2022 YouCode Industries
+    </footer>
+
+</body>
+
+</html>
