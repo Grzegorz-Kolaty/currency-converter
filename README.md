@@ -1,24 +1,11 @@
-# Grzegorz Kolaty - my homepage #
+# Currency converter - how to use?
+As you can see it works automatically:
+<img src="images/how_to_use.gif" alt="howToUse" width="600"/>
 
-<img src="images/george.jpg" alt="drawing" width="200"/>
+## Do not forget to see my homepage :)
 
-# Konwerter walut 
+Please do not forget to check my other projects on my homepage - trying to be best developer you can find here :)
+## My work
 
-Projekt dotyczy konwertera walut - spędziłem parę dodatkowych godzin aby zamieniał waluty w obie strony, nie tylko w jedną :)
-## Interesting things
-
-Moja strona internetowa znajduje się [tutaj](https://grzegorz-kolaty.github.io/homepage/).
-Konwerter walut znajdziesz [o tutaj!](https://grzegorz-kolaty.github.io/currency-converter/).
-
-## Langs
-
-Konwerter jest zrobiony w JS programuję aktualnie :-)
-
-Zajrzyj do wewnątrz mojej strony jak jesteś deweloperem :)
-
-
-## Podziękowania
-Wszystko co tutaj znajdziesz zrobiłem dzięki kursowi Frontend z You Code
-
-## Linki
-https://youcode.pl/
+My homepage [-> click me <-](https://grzegorz-kolaty.github.io/homepage/).
+Currency converter  [-> click me <-](https://grzegorz-kolaty.github.io/currency-converter/).
