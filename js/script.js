@@ -1,37 +1,6 @@
 {
-    function calculateResult(amount, currencyIn, currencyOut) {
-        const EUR = 4.82;
-        const USD = 4.96;
-
-        switch (currencyIn) {
-            case "PLN":
-                switch (currencyOut) {
-                    case "PLN":
-                        return amount * 1;
-                    case "EUR":
-                        return amount / EUR;
-                    case "USD":
-                        return amount / USD;
-                };
-            case "EUR":
-                switch (currencyOut) {
-                    case "EUR":
-                        return amount * 1;
-                    case "PLN":
-                        return amount * EUR;
-                    case "USD":
-                        return amount * EUR / USD;
-                };
-            case "USD":
-                switch (currencyOut) {
-                    case "USD":
-                        return amount * 1;
-                    case "PLN":
-                        return amount * USD;
-                    case "EUR":
-                        return amount * USD / EUR;
-                };
-        };
+    calculateResult = (amount, currencyIn, currencyOut) => {
+        return amount * currencyIn / currencyOut
     };
 
     const onFormSubmit = () => {
@@ -42,16 +11,15 @@
         const amount = +amountElement.value;
         const currencyIn = currencyElementIn.value;
         const currencyOut = currencyElementOut.value;
-
+        const currencyOutText = currencyElementOut.options[currencyElementOut.selectedIndex].text;
+        
         const result = calculateResult(amount, currencyIn, currencyOut);
-        console.log(result);
-
-        updateResultText(result, currencyOut);
+        updateResultText(result, currencyOutText);
     };
 
-    const updateResultText = (result, currencyOut) => {
+    const updateResultText = (result, currencyOutText) => {
         const resultElement = document.querySelector(".js-result");
-        resultElement.innerHTML = `${result.toFixed(2)} ${currencyOut}`;
+        resultElement.innerHTML = `${result.toFixed(2)} ${currencyOutText}`;
     };
 
     const init = () => {
